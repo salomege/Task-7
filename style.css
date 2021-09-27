@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding:  0;
+	box-sizing: border-box;
+}
+
+.conteiner {
+	max-width: 1100px;
+	width: 100%;
+	margine: 0 auto;
+}
+
+box {
+	position: relative;
+}
+
+.first-animation {
+	position: absolute;
+	width: 200px;
+	animation-name: myMove;
+	animation-duration: 5s;
+	animation-delay: 0.5s;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+	animation-fill-mode: backwards;
+	animation-iteration-count: infinite;
+}
+	@keyframes myMove {
+	0% {
+		top :0px;
+		left: 0px;
+	}
+	
+	50% {
+		top: 50%;
+		left: 50%;
+		
+	}
+	100% {
+	bottom :0px;
+	right: 0px;
+	}
+
+}
+
+.second-animation {
+	position: absolute;
+	width: 200px;
+	animation-name: myMove2;
+	animation-duration: 5s;
+	animation-delay: 0.5s;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+	animation-fill-mode: backwards;
+	animation-iteration-count: infinite;
+}
+
+@keyframes myMove2 {
+	0% {
+		bottom :0px;
+		right: 0px;
+	}
+	
+	50% {
+		bottom: 50%;
+		right: 50%;
+
+	
+	}
+	100% {
+    top :0px;
+	left: 0px;
+   }
+}
